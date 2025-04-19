@@ -1,0 +1,68 @@
+body{
+    background-color: #ffeeee;
+}
+.yea{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    margin-left: -20px;
+}
+.afis1{
+    margin-left: 2vw;
+    height: 30vw;
+    border-color: brown;
+    border-style: solid;
+    border-width: 12px;
+    border-radius: 20px;
+}
+.afis2{
+    margin-left: 1vw;
+    height: 30vw;
+    border-color: rgb(255, 176, 5);
+    border-style: solid;
+    border-width: 12px;
+    border-radius: 20px;
+}
+.title1{
+    font-family: "Encode Sans SC", sans-serif;
+    color: rgb(37, 37, 37);
+    font-size:  5vw;
+}
+.title2{
+    font-family: "Lexend Peta", sans-serif;
+    color: rgb(77, 77, 77);
+    font-size:  4vw;
+    margin-top: -1vw;
+}
+.title3{
+    font-family: "Lexend Peta", sans-serif;
+    color: rgb(77, 77, 77);
+    font-size:  4vw;
+    margin-top: 1vw;
+    margin-bottom: 0;
+}
+
+/* 📱 Mobil uyum için medya sorgusu */
+@media (max-width: 768px) {
+    .yea {
+        flex-direction: column;
+    }
+
+    .afis1, .afis2 {
+        height: 50vw;
+        max-height: none;
+        width: 80vw;
+        margin: 2vw 0;
+    }
+
+    .title1 {
+        font-size: 8vw;
+    }
+
+    .title2, .title3 {
+        font-size: 6vw;
+        text-align: center;
+        margin-left: 4vw;
+    }
+}
