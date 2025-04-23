@@ -3,14 +3,20 @@ function encodeWhatsAppMessage(ad, telefon) {
     return encodeURIComponent(message);
 }
 
-  document.getElementById("whatsappButton").addEventListener("click", function () {
+document.getElementById("whatsappButton").addEventListener("click", function (e) {
+    e.preventDefault(); // Prevent form submission
+    
     const ad = document.getElementById("name").value;
     const telefon = document.getElementById("phone").value;
+    
+    if (!ad || !telefon) {
+        alert("Lütfen tüm alanları doldurunuz.");
+        return;
+    }
+    
     const message = encodeWhatsAppMessage(ad, telefon);
-
-    console.log(ad, telefon);
-
-    const whatsappNumber = "905372078499"; 
+    const whatsappNumber = "905342937761"; 
     const url = `https://wa.me/${whatsappNumber}?text=${message}`;
-    this.href = url;
-  });
+    
+    window.open(url, '_blank');
+});
