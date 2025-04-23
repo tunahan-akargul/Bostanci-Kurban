@@ -127,7 +127,7 @@ body {
         left: 0;
         right: 0;
         height: calc(100vh - 60px);
-        background-color: white;
+        background-color: #fff2f2;
         flex-direction: column;
         justify-content: flex-start;
         padding: 20px 0;
