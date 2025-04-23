@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bostancı Kurban</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Peta:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="icon" href="Images/TabLogo.png">
+    <style>
+        .main-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .faq-container {
+            flex: 1;
+            margin: 0 20px;
+        }
+        .image-container {
+            width: 200px;
+            position: relative;
+            top: 0;
+            margin-top: 5vw;
+
+        }
+        .faq-item {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+            padding: 20px;
+            transition: all 0.3s ease;
+        }
+        .faq-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        .faq-question {
+            color: rgb(255, 173, 9);
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .faq-answer {
+            color: #333;
+            line-height: 1.6;
+        }
+        .faq-image {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        .faq-section {
+            margin-top: 40px;
+        }
+        .faq-section-title {
+            color: #2c3e50;
+            text-align: center;
+            font-size: 1.8em;
+            margin-bottom: 30px;
+            margin-top: 5vw;
+            border-bottom: 2px solid rgb(255, 173, 9);
+            padding-bottom: 10px;
+        }
+        @media (max-width: 768px) {
+            .image-container {
+                display: none;
+            }
+            .faq-section-title{
+                margin-top: 20vw;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <div class="logoDiv">
+            <img src="Images/TabLogo.png">
+        </div>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="tabMenu">
+            <label onclick="window.location.href='index.html'" class="tab" for="tab1">Ana Sayfa</label>
+            <label onclick="window.location.href='hakkimizda.html'" class="tab" for="tab2">Hakkımızda</label>
+            <label onclick="window.location.href='kurbanaDairMeseleler.html'" class="tab" for="tab3">Kurbana Dair Meseleler</label>
+            <label class="ticked" for="tab4">Sıkça Sorulan Sorular</label>
+            <button onclick="window.location.href='kurbanKayit.html'" class="kurbanKayitButton" for="tab5">Kurban Kayıt</button>
+            <a href="tel:05342937761" class="tab" style="text-decoration: none; color: inherit;">0534 293 77 61</a>
+        </div>
+    </div>
+
+    <div class="main-container">
+        <div class="image-container">
+            <img src="Images/Cattle Photo 51311.jpg" alt="Kurban Hizmetleri" class="faq-image">
+        </div>
+
+        <div class="faq-container">
+            <h1 class="faq-section-title">Sık Sorulan Sorular</h1>
+
+            <div class="faq-section">
+                <div class="faq-item">
+                    <div class="faq-question">Satın aldığım paket kurban teslimatı ne zaman yapılacak?</div>
+                    <div class="faq-answer">Kurban bayramının 1. Günü kurbanınızı teslim alabilirsiniz.</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Niçin fiyat aralığı veriyorsunuz, sabit fiyat veremiyorsunuz?</div>
+                    <div class="faq-answer">Hiçbir kurban diğeri ile aynı kiloda olmadığı için her bir kurbanı ayrı ayrı tartıyor, size sadece tartımı yapılan sizin kurbanınızın 1/7 hisse fiyatını yansıtıyoruz.</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Kurbanımın net fiyatı ne zaman belli olur?</div>
+                    <div class="faq-answer">Kurbanınızın fiyatı tartım neticesinde çıkan kilograma göre belli olur. Kurbanlıklarınızı ortalama bayramdan 2 hafta önce tartıp net fiyat bilgisini sizlere iletiyoruz.</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Ciğer, kalp ve diğer sakatatlar da kolimde gelecek mi?</div>
+                    <div class="faq-answer">Deri, kelle ve sakatatlar nasıl işlem görüyor? Pandemi süreci ve genel riskler dikkate alınarak çok hızlı bozulma yapısına sahip olan ciğer, kalp ve diğer sakatatların gıda güvenliği kuralları gereği bir risk oluşturmaması adına, sizin adınıza makbuz karşılığında hayır kurumlarına bağışlıyoruz.</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Evime teslimatı yapılan etler kendi kurban hissemin eti midir? Hiçbir kurbanı diğerine karıştırmadan tüm sistemi nasıl yönetebiliyorsunuz?</div>
+                    <div class="faq-answer">57 yıllık tecrübemizle yetiştirilme, sevkiyat, kesime alım, karkas çeyrekleme, parçalama, kasalama, hisseleme, paketleme, kolileme aşamalarında son sistem teknoloji kullanıyor ayrı ayrı küpe numarası ve kimlik kartı kullanıyoruz. Her bir safhada ayrıca kayıtlama yapıyoruz.</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Kesim yapılırken kesim mahalline kurbanımın yanına gelebilir miyim?</div>
+                    <div class="faq-answer">Sağlık Bakanlığı ve Tarım Gıda ve Hayvancılık Bakanlığının açıkladığı genel tedbirler, pandemi süreci, covid-19 (koronavirüs) tedbirleri, hijyen ve sanitasyon kuralları, İşçi Sağlığı ve İş Güvenliği ve diğer güvenlik gerekçeleri ile siz evinizde bayramınızı yaparken, biz tüm tedbirleri planlayarak sizin adınıza kesiminizi yapıyor, adresinize kurbanınızı teslim ediyoruz.</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Kurban eti nasıl saklanmalıdır?</div>
+                    <div class="faq-answer">
+                        <p>Protein açısından son derece zengin bir besin olan kurban eti, teslim alındıktan sonra mümkün olan en kısa sürede buzdolabına (0-4 C) yerleştirilmeli ve sakatatlar buzdolabında kırmızı etlerden ayrı muhafaza edilmelidir. Taze olarak tüketilecekse buzdolabında (0 -4 C) kırmızı et 4 gün, sakatat 2 gün muhafaza edilebilir. Etleri uzun süre saklamak isteyen tüketicilerimiz, derin dondurucularda (-18 C) en fazla 6 ay süre ile muhafaza edebilir.</p>
+                        <p>Donmuş kırmızı etin çözdürme işlemi buzdolabında (0-4 C) sağlanmalıdır. Çözülme sonrasında beklemeden tüketilmeli ve tekrar dondurulmamalıdır.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="image-container">
+            <img src="Images/Cattle Photo 3214973.jpg" alt="Kurban Hizmetleri" class="faq-image">
+        </div>
+    </div>
+    <script src="hamburger.js"></script>
+</body>
+</html>

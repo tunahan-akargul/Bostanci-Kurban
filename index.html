@@ -14,18 +14,34 @@
     <link rel="icon" href="Images/TabLogo.png">
 </head>
 <body>
-    <div class="yea">
+    <div class="menu">
+        <div class="logoDiv">
+            <img src="Images/TabLogo.png">
+        </div>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="tabMenu">
+            <label class="ticked" for="tab1">Ana Sayfa</label>
+            <label onclick="window.location.href='hakkimizda.html'" class="tab" for="tab2">Hakkımızda</label>
+            <label onclick="window.location.href='kurbanaDairMeseleler.html'" class="tab" for="tab3">Kurbana Dair Meseleler</label>
+            <label onclick="window.location.href='sorulanSorular.html'" class="tab" for="tab4">Sıkça Sorulan Sorular</label>
+            <button onclick="window.location.href='kurbanKayit.html'" class="kurbanKayitButton" for="tab5">Kurban Kayıt</button>
+            <a href="tel:05342937761" class="tab" style="text-decoration: none; color: inherit;">0534 293 77 61</a>
+            </div>
+    </div>
+    <div class="divs">
         <h1 class="title1">Bostancı Kurban</h1>
     </div>
-    <div class="yea">
+    <div class="divs">
         <h1 class="title2">Kurbanda her işi bize bırakın!</h1>
     </div>
-    <div class="yea">
+    <div class="photos">
         <img class="afis1" src="Images/Afis (1).jpeg">
         <img class="afis2" src="Images/Afis (2).jpeg">
    </div>
-   <div class="yea">
-    <h1 class="title3">Tel. NO: 0534 293 77 61</h1>
-    </div>
+   <script src="hamburger.js"></script>
 </body>
 </html>

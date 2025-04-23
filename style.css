@@ -1,68 +1,257 @@
-body{
-    background-color: #ffeeee;
+body {
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
 }
-.yea{
+
+/* Desktop Menu Styles */
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5vw;
+    background-color: rgb(255, 255, 255);
+    border-bottom: 2px solid rgb(221, 221, 221);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.6);
+    z-index: 1000;
+}
+
+.logoDiv {
+    position: absolute;
+    top: 0;
+    left: 10vw;
+}
+
+.logoDiv img {
+    border-radius: 20%;
+    width: 5vw;
+    height: 5vw;
+}
+
+.tabMenu {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    top: 0;
+    left: 15vw;
+    right: 10vw;
+    height: 5vw;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.tab {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1vw;
+    cursor: pointer;
+    padding: 1vw 2vw;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+.tab:hover {
+    color: rgb(255, 173, 9);
+    border-bottom: 4px solid rgb(255, 173, 9);
+}
+
+.ticked {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1vw;
+    cursor: pointer;
+    padding: 1vw 2vw;
+    color: rgb(255, 173, 9);
+    border-bottom: 4px solid rgb(255, 173, 9);
+}
+
+.kurbanKayitButton {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1vw;
+    cursor: pointer;
+    padding: 1vw 2vw;
+    background-color: rgb(255, 173, 9);
+    color: white;
+    border-radius: 10px;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.kurbanKayitButton:hover {
+    background-color: rgb(255, 184, 43);
+}
+
+/* Hamburger Menu Button */
+.hamburger {
+    display: none;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1001;
+}
+
+.hamburger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 5px 0;
+    transition: all 0.3s ease;
+}
+
+/* Mobile Menu Styles */
+@media (max-width: 768px) {
+    .menu {
+        height: 60px;
+        padding: 0;
+    }
+
+    .logoDiv {
+        position: relative;
+        left: 20px;
+        top: 5px;
+    }
+
+    .logoDiv img {
+        width: 13vw;
+        height: 13vw;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .tabMenu {
+        position: fixed;
+        top: 60px;
+        left: 0;
+        right: 0;
+        height: calc(100vh - 60px);
+        background-color: white;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 20px 0;
+        transform: translateX(-100%);
+        transition: transform 0.3s ease;
+        z-index: 999;
+    }
+
+    .tabMenu.active {
+        transform: translateX(0);
+    }
+
+    .tab, .ticked, .kurbanKayitButton {
+        font-size: 18px;
+        padding: 15px 20px;
+        width: 100%;
+        text-align: center;
+        border-bottom: 1px solid #eee;
+        margin: 0;
+    }
+
+    .tab:hover, .ticked:hover {
+        border-bottom: 1px solid #eee;
+        background-color: #f9f9f9;
+    }
+
+    .kurbanKayitButton {
+        margin: 10px 20px;
+        width: calc(100% - 40px);
+        font-size: 18px;
+        padding: 15px 20px;
+    }
+
+    /* Hamburger Animation */
+    .hamburger.active span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .hamburger.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -7px);
+    }
+}
+
+/* Rest of your existing styles */
+.divs {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100vw;
     margin-left: -20px;
 }
-.afis1{
-    margin-left: 2vw;
-    height: 30vw;
+
+.photos {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
     border-color: brown;
     border-style: solid;
-    border-width: 12px;
-    border-radius: 20px;
+    border-width: 3px;
+    padding: 0;
+    margin: 0;
 }
-.afis2{
-    margin-left: 1vw;
+
+.afis1 {
     height: 30vw;
-    border-color: rgb(255, 176, 5);
-    border-style: solid;
-    border-width: 12px;
-    border-radius: 20px;
 }
-.title1{
+
+.afis2 {
+    height: 30vw;
+}
+
+.title1 {
     font-family: "Encode Sans SC", sans-serif;
     color: rgb(37, 37, 37);
-    font-size:  5vw;
+    font-size: 5vw;
+    margin-top: 5vw;
+    border-bottom: 4px solid rgb(255, 173, 9);
 }
-.title2{
+
+.title2 {
     font-family: "Lexend Peta", sans-serif;
-    color: rgb(77, 77, 77);
-    font-size:  4vw;
+    color: rgb(255, 173, 9);
+    font-size: 4vw;
     margin-top: -1vw;
 }
-.title3{
+
+.title3 {
     font-family: "Lexend Peta", sans-serif;
     color: rgb(77, 77, 77);
-    font-size:  4vw;
+    font-size: 4vw;
     margin-top: 1vw;
     margin-bottom: 0;
 }
 
-/* 📱 Mobil uyum için medya sorgusu */
+/* Mobile Responsive Styles */
 @media (max-width: 768px) {
-    .yea {
+    .photos{
         flex-direction: column;
+        align-items: center;
+        padding: 0;
+        border:none;
     }
-
+    .divs {
+        margin-left: 0;
+    }
     .afis1, .afis2 {
         height: 50vw;
         max-height: none;
         width: 80vw;
         margin: 2vw 0;
+        border:solid 2px rgb(225, 38, 0);
     }
 
     .title1 {
         font-size: 8vw;
+        margin-top: 20vw;
     }
 
     .title2, .title3 {
         font-size: 6vw;
         text-align: center;
-        margin-left: 4vw;
     }
 }

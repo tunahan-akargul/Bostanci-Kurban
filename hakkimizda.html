@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bostancı Kurban</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Peta:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="icon" href="Images/TabLogo.png">
+    <style>
+        .hero-image {
+            width: 100%;
+            height: 40vh;
+            object-fit: cover;
+            margin-bottom: 40px;
+            margin-top: 3vw;
+        }
+        .about-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .about-title {
+            color: #2c3e50;
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 30px;
+            position: relative;
+            padding-bottom: 15px;
+        }
+        .about-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 3px;
+            background-color: rgb(255, 173, 9);
+        }
+        .about-content {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            line-height: 1.8;
+            font-size: 1.1em;
+            color: #333;
+            text-align: justify;
+            position: relative;
+        }
+        .about-content::before {
+            content: '"';
+            position: absolute;
+            top: -20px;
+            left: 20px;
+            font-size: 60px;
+            color: rgb(255, 173, 9);
+            opacity: 0.2;
+        }
+        .about-content::after {
+            content: '"';
+            position: absolute;
+            bottom: -40px;
+            right: 20px;
+            font-size: 60px;
+            color: rgb(255, 173, 9);
+            opacity: 0.2;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <div class="logoDiv">
+            <img src="Images/TabLogo.png">
+        </div>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="tabMenu">
+            <label onclick="window.location.href='index.html'" class="tab" for="tab1">Ana Sayfa</label>
+            <label class="ticked" for="tab2">Hakkımızda</label>
+            <label onclick="window.location.href='kurbanaDairMeseleler.html'" class="tab" for="tab3">Kurbana Dair Meseleler</label>
+            <label onclick="window.location.href='sorulanSorular.html'" class="tab" for="tab4">Sıkça Sorulan Sorular</label>
+            <button onclick="window.location.href='kurbanKayit.html'" class="kurbanKayitButton" for="tab5">Kurban Kayıt</button>
+            <a href="tel:05342937761" class="tab" style="text-decoration: none; color: inherit;">0534 293 77 61</a>
+        </div>
+    </div>
+
+    <img src="Images/Cattle Photo from Pexels.jpg" alt="Bostancı Kurban" class="hero-image">
+
+    <div class="about-container">
+        <h1 class="about-title">BİZ KİMİZ?</h1>
+        <div class="about-content">
+            Millî ve manevî değerlerimize bağlı yarım asırlık tecrübemizle milletimiz ve memleketimiz yararına işler yapma gayesiyle hızla değişen ve gelişen dünyamızda en yeni ve en güncel teknolojik ekipmanlarla donatılmış modern tesislerimizde profesyonel ekiplerimizle kalite yönetim sistemlerine riayet eden, "İslami usullere uygun bir şekilde İBADET niyetiyle" ve "tüm insanlığa hizmet gayesiyle" kurulmuş, stratejik ve global düşünen, karar alma yeteneğine sahip olan, güvenilir, öncü, yenilikçi bir kurban organizasyonuyuz.
+        </div>
+    </div>
+    <script src="hamburger.js"></script>
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bostancı Kurban</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Peta:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="icon" href="Images/TabLogo.png">
+    <style>
+        .contact-container {
+            max-width: 600px;
+            margin: 5vw auto;
+            padding: 30px;
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            margin-top: 15vw;
+        }
+        .contact-title {
+            color: #2c3e50;
+            text-align: center;
+            font-size: 2em;
+            margin-bottom: 30px;
+            position: relative;
+            padding-bottom: 15px;
+        }
+        .contact-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background-color: rgb(255, 173, 9);
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            color: #333;
+            font-weight: 500;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            font-size: 1em;
+            transition: border-color 0.3s ease;
+        }
+        .form-group input:focus {
+            outline: none;
+            border-color: rgb(255, 173, 9);
+        }
+        .submit-btn {
+            background-color: rgb(255, 173, 9);
+            color: white;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.1em;
+            cursor: pointer;
+            width: 100%;
+            transition: background-color 0.3s ease;
+        }
+        .submit-btn:hover {
+            background-color: #e69c00;
+        }
+        .required::after {
+            content: ' *';
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <div class="logoDiv">
+            <img src="Images/TabLogo.png">
+        </div>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="tabMenu">
+            <label onclick="window.location.href='index.html'" class="tab" for="tab1">Ana Sayfa</label>
+            <label onclick="window.location.href='hakkimizda.html'" class="tab" for="tab2">Hakkımızda</label>
+            <label onclick="window.location.href='kurbanaDairMeseleler.html'" class="tab" for="tab3">Kurbana Dair Meseleler</label>
+            <label onclick="window.location.href='sorulanSorular.html'" class="tab" for="tab4">Sıkça Sorulan Sorular</label>
+            <button onclick="window.location.href='kurbanKayit.html'" class="kurbanKayitButton" for="tab5">Kurban Kayıt</button>
+            <a href="tel:05342937761" class="tab" style="text-decoration: none; color: inherit;">0534 293 77 61</a>
+        </div>
+    </div>
+
+    <div class="contact-container">
+        <h1 class="contact-title">Biz Sizi Arayalım</h1>
+        <form>
+            <div class="form-group">
+                <label class="required" for="name">Ad Soyad</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label class="required" for="phone">Telefon Numaranız</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <button type="submit" class="submit-btn">Kurban Kayıt Talebi Gönder</button>
+        </form>
+    </div>
+
+    <script src="hamburger.js"></script>
+
+</body>
+</html>
