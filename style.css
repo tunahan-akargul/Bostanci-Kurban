@@ -1,5 +1,5 @@
 body {
-    background-color: #ffffff;
+    background-color: #fff2f2;
     margin: 0;
     padding: 0;
 }
@@ -11,7 +11,7 @@ body {
     left: 0;
     right: 0;
     height: 5vw;
-    background-color: rgb(255, 255, 255);
+    background-color: #fff2f2;
     border-bottom: 2px solid rgb(221, 221, 221);
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.6);
     z-index: 1000;
