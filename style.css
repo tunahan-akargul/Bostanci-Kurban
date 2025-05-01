@@ -267,4 +267,9 @@ body {
         font-size: 6vw;
         text-align: center;
     }
+    .hamburgerText {
+        font-size: 3vw;
+        font-family: "Lexend Peta", sans-serif;
+        font-weight: bold;
+    }
 }
