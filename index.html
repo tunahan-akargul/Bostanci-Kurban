@@ -47,6 +47,48 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@100..900&display=swap" rel="stylesheet">
 
+    <style>
+
+        .afis1, .afis2 {
+            position: absolute;
+            top: 20vw;
+            border-radius: 1vw;
+            transition: all 1.5s ease-in-out;
+            height: 35vw;
+        }
+
+        @media (max-width: 768px) {
+            .afis1, .afis2 {
+                top: 55vw;
+                height: 50vw;
+            }
+        }
+
+        @keyframes fadeInOut {
+            0%, 40% {
+                opacity: 1;
+                transform: scale(1);
+            }
+            50%, 90% {
+                opacity: 0;
+                transform: scale(1.05);
+            }
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        .afis1 {
+            animation: fadeInOut 6s infinite;
+            animation-delay: 1s;
+        }
+
+        .afis2 {
+            animation: fadeInOut 6s infinite reverse;
+        }
+    </style>
+
     <!-- Structured Data -->
     <script type="application/ld+json">
     {
@@ -107,7 +149,7 @@
         <h1 class="title2">Kurbanda her işi bize bırakın!</h1>
     </div>
     <div class="photos">
-        <img class="afis1" src="Images/Afis (1).jpeg" alt="Bostancı Kurban Hizmetleri">
+        <img class="afis1" src="Images/Afis (1) (1).jpeg" alt="Bostancı Kurban Hizmetleri">
         <img class="afis2" src="Images/Afis (2).jpeg" alt="Bostancı Kurban Hizmetleri">
     </div>
 
