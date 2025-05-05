@@ -213,23 +213,41 @@ body {
     font-family: "Encode Sans SC", sans-serif;
     color: rgb(37, 37, 37);
     font-size: 5vw;
-    margin-top: 5vw;
+    margin-top: 6vw;
     border-bottom: 4px solid rgb(238, 162, 11);
 }
 
 .title2 {
     font-family: "Lexend Peta", sans-serif;
+    text-align: center;
     color: rgb(238, 162, 11);
-    font-size: 4vw;
-    margin-top: -1vw;
+    font-size: 3.5vw;
+    margin-left: 1.5vw;
+    animation: fadeIn 6s infinite;
 }
 
-.title3 {
-    font-family: "Lexend Peta", sans-serif;
-    color: rgb(77, 77, 77);
-    font-size: 4vw;
-    margin-top: 1vw;
-    margin-bottom: 0;
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        color: rgb(183, 1, 44);
+        margin-top: -0.5vw;
+    }
+    6% {
+        opacity: 1;
+        margin-top: -1vw;
+    }
+    50% {
+        color: rgb(238, 162, 11);
+    }
+    94% {
+        opacity: 1;
+        margin-top: -1vw;
+    }
+    100% {
+        color: rgb(183, 1, 44);
+        opacity: 0;
+        margin-top: -0.5vw;
+    }
 }
 
 /* Mobile Responsive Styles */
@@ -260,8 +278,8 @@ body {
         margin-top: 20vw;
     }
 
-    .title2, .title3 {
-        font-size: 6vw;
+    .title2 {
+        font-size: 5vw;
         text-align: center;
     }
     .hamburgerText {
